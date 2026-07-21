@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Domine seu dinheiro e organize sua vida | E-book Finanças Pessoais</title>
+  <meta name="description" content="E-book prático de finanças pessoais e organização. Aprenda a planejar, quitar dívidas e começar a investir por apenas R$ 35,00.">
+  <meta property="og:title" content="Domine seu dinheiro e organize sua vida | E-book Finanças Pessoais">
+  <meta property="og:description" content="Transforme sua vida financeira em tempo recorde. E-book completo + bônus por apenas R$ 35,00.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green-dark: #0d3b2e;
+      --green-deep: #0a2d24;
+      --navy: #0f172a;
+      --white: #ffffff;
+      --gold: #c9a84c;
+      --gold-light: #f0d78c;
+      --gray-50: #f8f9fa;
+      --gray-100: #f0f2f5;
+      --gray-200: #e2e6ea;
+      --gray-300: #d1d5db;
+      --gray-500: #6b7280;
+      --gray-600: #4b5563;
+      --gray-700: #374151;
+      --gray-900: #111827;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+      --shadow-md: 0 4px 20px rgba(0,0,0,0.1);
+      --shadow-lg: 0 10px 40px rgba(0,0,0,0.12);
+      --radius: 16px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--gray-900);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .heading {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+
+    /* Header */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--gray-100);
+    }
+
+    .header .container {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      height: 72px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 28px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      border: none;
+      cursor: pointer;
+      line-height: 1.4;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--gold), #b8943f);
+      color: var(--navy);
+      box-shadow: 0 4px 16px rgba(201,168,76,0.35);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(201,168,76,0.45);
+    }
+
+    .btn-navy {
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    .btn-navy:hover {
+      background: var(--green-dark);
+    }
+
+    .btn-large {
+      padding: 18px 36px;
+      font-size: 1.1rem;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--gold);
+      color: var(--gold);
+    }
+
+    .btn-outline:hover {
+      background: var(--gold);
+      color: var(--navy);
+    }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(180deg, var(--green-dark) 0%, var(--navy) 100%);
+      color: var(--white);
+      padding: 72px 0 96px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -40%;
+      right: -20%;
+      width: 80%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(201,168,76,0.12) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .hero .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 48px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-content {
+      text-align: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: var(--gold-light);
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: var(--white);
+    }
+
+    .hero h1 span {
+      color: var(--gold-light);
+    }
+
+    .hero-subtitle {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.85);
+      max-width: 540px;
+      margin: 0 auto 32px;
+    }
+
+    .hero-features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px 28px;
+      margin-bottom: 32px;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.8);
+    }
+
+    .hero-features span {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .hero-cta {
+      margin-bottom: 24px;
+    }
+
+    .hero-note {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.65);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .hero-image {
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-image img {
+      max-width: 320px;
+      filter: drop-shadow(0 24px 48px rgba(0,0,0,0.35));
+    }
+
+    /* Sections */
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .section-title h2 {
+      font-size: 2rem;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+
+    .section-title p {
+      font-size: 1.1rem;
+      color: var(--gray-600);
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    /* Problem */
+    .problem {
+      background: var(--gray-50);
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .problem-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: var(--shadow-sm);
+      border-left: 4px solid var(--gold);
+    }
+
+    .problem-card h3 {
+      color: var(--navy);
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+    }
+
+    .problem-card p {
+      color: var(--gray-600);
+      font-size: 0.95rem;
+    }
+
+    /* Audience */
+    .audience-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .audience-card {
+      background: linear-gradient(135deg, var(--green-dark), var(--navy));
+      color: var(--white);
+      border-radius: var(--radius);
+      padding: 36px;
+      text-align: center;
+    }
+
+    .audience-icon {
+      width: 64px;
+      height: 64px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 20px;
+      color: var(--gold-light);
+    }
+
+    .audience-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+    }
+
+    .audience-card p {
+      font-size: 0.95rem;
+      color: rgba(255,255,255,0.85);
+    }
+
+    /* Benefits */
+    .benefits {
+      background: var(--gray-50);
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .benefit-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--gray-100);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .benefit-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--green-dark), var(--navy));
+      display: grid;
+      place-items: center;
+      margin-bottom: 20px;
+      color: var(--gold-light);
+    }
+
+    .benefit-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: var(--navy);
+    }
+
+    .benefit-card p {
+      color: var(--gray-600);
+      font-size: 0.95rem;
+    }
+
+    /* Steps */
+    .steps {
+      background: var(--white);
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      counter-reset: step;
+    }
+
+    .step-card {
+      background: var(--gray-50);
+      border-radius: var(--radius);
+      padding: 32px;
+      position: relative;
+      border: 1px solid var(--gray-200);
+    }
+
+    .step-number {
+      width: 48px;
+      height: 48px;
+      background: var(--gold);
+      color: var(--navy);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 1.2rem;
+      margin-bottom: 18px;
+    }
+
+    .step-card h3 {
+      color: var(--navy);
+      margin-bottom: 10px;
+      font-size: 1.15rem;
+    }
+
+    .step-card p {
+      color: var(--gray-600);
+      font-size: 0.95rem;
+    }
+
+    /* Modules */
+    .modules {
+      background: var(--gray-50);
+    }
+
+    .modules-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .module-item {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 24px 28px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--gray-100);
+    }
+
+    .module-check {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--green-dark), var(--navy));
+      color: var(--gold-light);
+      display: grid;
+      place-items: center;
+      flex-shrink: 0;
+    }
+
+    .module-text h4 {
+      color: var(--navy);
+      margin-bottom: 6px;
+      font-size: 1.05rem;
+    }
+
+    .module-text p {
+      color: var(--gray-600);
+      font-size: 0.9rem;
+    }
+
+    /* Offer */
+    .offer-card {
+      background: var(--white);
+      border-radius: 24px;
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--gray-200);
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    .offer-image {
+      background: linear-gradient(135deg, var(--green-dark), var(--navy));
+      display: grid;
+      place-items: center;
+      padding: 40px;
+    }
+
+    .offer-image img {
+      max-width: 240px;
+    }
+
+    .offer-content {
+      padding: 40px 32px;
+    }
+
+    .offer-content h3 {
+      font-size: 1.6rem;
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+
+    .offer-content > p {
+      color: var(--gray-600);
+      margin-bottom: 28px;
+    }
+
+    .offer-list {
+      list-style: none;
+      margin-bottom: 28px;
+    }
+
+    .offer-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--gray-100);
+      color: var(--gray-700);
+      font-size: 0.95rem;
+    }
+
+    .offer-list li:last-child {
+      border-bottom: none;
+    }
+
+    .offer-list svg {
+      width: 22px;
+      height: 22px;
+      color: var(--green-dark);
+      flex-shrink: 0;
+    }
+
+    .offer-bonus {
+      background: linear-gradient(135deg, rgba(201,168,76,0.1), rgba(201,168,76,0.05));
+      border: 1px dashed var(--gold);
+      border-radius: 14px;
+      padding: 18px;
+      margin-bottom: 28px;
+    }
+
+    .offer-bonus strong {
+      color: var(--navy);
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .offer-bonus p {
+      font-size: 0.9rem;
+      color: var(--gray-600);
+    }
+
+    .price-box {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .price-original {
+      font-size: 1.1rem;
+      color: var(--gray-500);
+      text-decoration: line-through;
+      margin-bottom: 6px;
+    }
+
+    .price-current {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: var(--green-dark);
+      line-height: 1;
+    }
+
+    .price-current span {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--gray-500);
+      display: block;
+      margin-top: 6px;
+    }
+
+    .secure-note {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      color: var(--gray-500);
+      margin-top: 16px;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      background: var(--gray-50);
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .testimonial-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 32px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--gray-100);
+    }
+
+    .stars {
+      color: var(--gold);
+      margin-bottom: 16px;
+      display: flex;
+      gap: 2px;
+    }
+
+    .testimonial-text {
+      color: var(--gray-700);
+      font-size: 1rem;
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      color: var(--white);
+      font-size: 1rem;
+      flex-shrink: 0;
+    }
+
+    .author-info strong {
+      display: block;
+      color: var(--navy);
+      font-size: 0.95rem;
+    }
+
+    .author-info span {
+      font-size: 0.85rem;
+      color: var(--gray-500);
+    }
+
+    /* Guarantee */
+    .guarantee {
+      background: linear-gradient(135deg, var(--green-dark), var(--navy));
+      color: var(--white);
+    }
+
+    .guarantee .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 24px;
+    }
+
+    .guarantee-icon {
+      width: 88px;
+      height: 88px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--gold-light);
+    }
+
+    .guarantee h2 {
+      font-size: 2rem;
+      color: var(--white);
+    }
+
+    .guarantee p {
+      max-width: 620px;
+      color: rgba(255,255,255,0.85);
+      font-size: 1.05rem;
+    }
+
+    /* FAQ */
+    .faq-list {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--gray-200);
+    }
+
+    .faq-question {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      padding: 22px 0;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--navy);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      gap: 16px;
+    }
+
+    .faq-question svg {
+      width: 22px;
+      height: 22px;
+      color: var(--gold);
+      flex-shrink: 0;
+      transition: transform 0.2s ease;
+    }
+
+    .faq-item.active .faq-question svg {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+    }
+
+    .faq-item.active .faq-answer {
+      max-height: 400px;
+      padding-bottom: 22px;
+    }
+
+    .faq-answer p {
+      color: var(--gray-600);
+      font-size: 0.95rem;
+    }
+
+    .faq-answer p + p {
+      margin-top: 12px;
+    }
+
+    /* Final CTA */
+    .final-cta {
+      background: var(--gray-50);
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      font-size: 2rem;
+      color: var(--navy);
+      margin-bottom: 16px;
+    }
+
+    .final-cta p {
+      color: var(--gray-600);
+      max-width: 560px;
+      margin: 0 auto 32px;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--navy);
+      color: rgba(255,255,255,0.7);
+      padding: 48px 0 32px;
+      font-size: 0.9rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+      margin-bottom: 32px;
+    }
+
+    .footer-brand h3 {
+      color: var(--white);
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.4rem;
+      margin-bottom: 12px;
+    }
+
+    .footer-links h4 {
+      color: var(--white);
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+    }
+
+    .footer-links ul {
+      list-style: none;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      display: block;
+      padding: 6px 0;
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 24px;
+      text-align: center;
+      color: rgba(255,255,255,0.5);
+      font-size: 0.85rem;
+    }
+
+    /* Mobile sticky CTA */
+    .sticky-cta {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--white);
+      border-top: 1px solid var(--gray-200);
+      padding: 12px 16px;
+      display: none;
+      z-index: 90;
+      box-shadow: 0 -4px 20px rgba(0,0,0,0.08);
+    }
+
+    .sticky-cta .btn {
+      width: 100%;
+    }
+
+    /* Responsive */
+    @media (min-width: 640px) {
+      .hero h1 {
+        font-size: 3.2rem;
+      }
+
+      .hero-image img {
+        max-width: 420px;
+      }
+
+      .section-title h2,
+      .guarantee h2,
+      .final-cta h2 {
+        font-size: 2.4rem;
+      }
+
+      .problem-grid,
+      .audience-grid,
+      .benefits-grid,
+      .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .steps-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 900px) {
+      .hero .container {
+        grid-template-columns: 1.05fr 0.95fr;
+        text-align: left;
+      }
+
+      .hero-content {
+        text-align: left;
+      }
+
+      .hero-subtitle,
+      .hero-features,
+      .hero-note {
+        margin-left: 0;
+        margin-right: 0;
+        justify-content: flex-start;
+      }
+
+      .hero h1 {
+        font-size: 3.8rem;
+      }
+
+      .hero-image img {
+        max-width: 480px;
+      }
+
+      .benefits-grid,
+      .testimonials-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .problem-grid,
+      .audience-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .steps-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .modules-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .offer-card {
+        grid-template-columns: 0.9fr 1.1fr;
+      }
+
+      .offer-content {
+        padding: 56px 48px;
+      }
+
+      .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 639px) {
+      .sticky-cta {
+        display: block;
+      }
+
+      body {
+        padding-bottom: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <a href="https://pay.kiwify.com.br/ydyTkZz" class="btn btn-primary">Comprar agora</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg>
+          E-book digital + bônus exclusivos
+        </div>
+        <h1 class="heading">Domine seu dinheiro e <span>organize sua vida</span> em tempo recorde</h1>
+        <p class="hero-subtitle">Um método prático para quem quer sair do aperto, quitar dívidas, começar a investir e construir uma rotina financeira real — sem complicação e do zero.</p>
+        <div class="hero-features">
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> 120+ páginas</span>
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Planilhas prontas</span>
+          <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Acesso imediato</span>
+        </div>
+        <a href="https://pay.kiwify.com.br/ydyTkZz" class="btn btn-primary btn-large hero-cta">Garantir meu E-book Agora</a>
+        <p class="hero-note">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Pagamento seguro via Kiwify • Garantia de 7 dias
+        </p>
+      </div>
+      <div class="hero-image">
+        <img src="assets/ebook-mockup.png" alt="Mockup do e-book Domine seu dinheiro e organize sua vida em um tablet digital">
+      </div>
+    </div>
+  </section>
+
+  <section class="section problem">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="heading">Você se cansou de viver assim?</h2>
+        <p>Muitas pessoas sabem que precisam organizar as finanças, mas não sabem por onde começar. Esse e-book foi feito para quem quer uma solução simples e direta.</p>
+      </div>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <h3>Fim do mês no vermelho</h3>
+          <p>O salário chega, as contas saem e você fica sem entender para onde foi o dinheiro. O ciclo de ansiedade se repete todo mês.</p>
+        </div>
+        <div class="problem-card">
+          <h3>Dívidas que não param de crescer</h3>
+          <p>Cartão, parcelamentos e empréstimos. Cada mês parece que você paga mais do que ganha, sem conseguir enxergar uma saída.</p>
+        </div>
+        <div class="problem-card">
+          <h3>Falta de organização no dia a dia</h3>
+          <p>Casa bagunçada, rotina perdida e a sensação de que o tempo e o dinheiro não rendem o suficiente para seus objetivos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="heading">Para quem é este e-book</h2>
+        <p>Se você se identifica com algum desses perfis, este material foi feito sob medida para você.</p>
+      </div>
+      <div class="audience-grid">
+        <div class="audience-card">
+          <div class="audience-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3>Quem quer organizar o dinheiro</h3>
+          <p>Você quer entender para onde vai cada centavo, criar um orçamento realista e parar de viver no escuro financeiro.</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Quem quer quitar dívidas</h3>
+          <p>Está cansado de juros, parcelamentos e cartão estourado? Aprenda uma estratégia clara para eliminar dívidas de forma sustentável.</p>
+        </div>
+        <div class="audience-card">
+          <div class="audience-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Quem quer começar a investir</h3>
+          <p>Tem vontade de fazer o dinheiro render, mas acha o mercado confuso? Descubra o caminho seguro para iniciantes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section benefits">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="heading">O que você vai aprender</h2>
+        <p>Um método direto para colocar suas finanças e rotina no lugar, com exercícios práticos e passo a passo.</p>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3>Planejamento Mensal</h3>
+          <p>Aprenda a criar um orçamento realista que funciona no seu dia a dia, sem culpa e sem planilhas complicadas.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Quitação de Dívidas</h3>
+          <p>Descubra como priorizar, negociar e eliminar dívidas de forma sustentável, sem viver no sufoco.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Investimentos para Iniciantes</h3>
+          <p>Os primeiros passos para fazer seu dinheiro render, com segurança e sem cair em promessas irreais.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+          </div>
+          <h3>Rotinas de Organização</h3>
+          <p>Adote hábitos simples para manter casa, tempo e dinheiro organizados todos os dias.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section steps">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="heading">Como funciona</h2>
+        <p>Um método simples, dividido em 4 etapas, para você aplicar ainda hoje e ver resultados em poucas semanas.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3>Diagnóstico financeiro</h3>
+          <p>Descubra exatamente quanto entra, quanto sai e onde seu dinheiro está realmente indo. O primeiro passo para qualquer mudança.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3>Organização do orçamento</h3>
+          <p>Crie um orçamento mensal que respeita sua realidade, separa gastos essenciais e libera dinheiro para seus objetivos.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3>Plano de quitação</h3>
+          <p>Priorize dívidas, negocie melhores condições e elimine o endividamento com uma estratégia clara e sem sofrimento.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">4</div>
+          <h3>Construção de patrimônio</h3>
+          <p>Aprenda a reservar, proteger e fazer seu dinheiro render com investimentos adequados para iniciantes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section modules">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="heading">Conteúdo do e-book</h2>
+        <p>Material completo e organizado para você ir do básico ao avançado no seu próprio ritmo.</p>
+      </div>
+      <div class="modules-grid">
+        <div class="module-item">
+          <div class="module-check">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+          <div class="module-text">
+            <h4>Módulo 1 — Mente Financeira</h4>
+            <p>Como sua relação com dinheiro se forma e como reprogramar crenças que sabotam sua prosperidade.</p>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-check">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+          <div class="module-text">
+            <h4>Módulo 2 — Orçamento Realista</h4>
+            <p>Passo a passo para montar um orçamento mensal que funciona, com a planilha prática inclusa.</p>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-check">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+          <div class="module-text">
+            <h4>Módulo 3 — Eliminação de Dívidas</h4>
+            <p>Estratégias para negociar, priorizar e quitar dívidas sem afundar ainda mais.</p>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-check">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+          <div class="module-text">
+            <h4>Módulo 4 — Reserva de Emergência</h4>
+            <p>Quanto guardar, onde guardar e como construir uma reserva sólida para viver com mais tranquilidade.</p>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-check">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+          <div class="module-text">
+            <h4>Módulo 5 — Investimentos para Iniciantes</h4>
+            <p>Introdução a CDB, Tesouro, fundos e ações, com foco em segurança e consistência.</p>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-check">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+          <div class="module-text">
+            <h4>Módulo 6 — Organização Pessoal</h4>
+            <p>Rotinas práticas para organizar casa, tempo, documentos e objetivos no dia a dia.</p>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-check">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+          <div class="module-text">
+            <h4>Módulo 7 — Metas e Objetivos</h4>
+            <p>Como definir metas financeiras claras e criar um plano para alcançá-las com consistência.</p>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-check">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+          </div>
+          <div class="module-text">
+            <h4>Módulo 8 — Manutenção da Vida Organizada</h4>
+            <p>Hábitos e revisões periódicas para manter tudo em ordem a longo prazo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="heading">O que você recebe</h2>
+        <p>Conteúdo completo, bônus práticos e acesso imediato para transformar sua vida financeira.</p>
+      </div>
+      <div class="offer-card">
+        <div class="offer-image">
+          <img src="assets/ebook-mockup.png" alt="Capa do combo de e-books de finanças pessoais e organização">
+        </div>
+        <div class="offer-content">
+          <h3 class="heading">Combo Finanças & Organização</h3>
+          <p>Tudo que você precisa para começar hoje mesmo, mesmo que esteja do zero.</p>
+          <ul class="offer-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              E-book principal "Domine seu dinheiro e organize sua vida" (PDF)
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              Planilha de controle de gastos pronta para usar
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              Checklist de organização semanal e mensal
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              Guia de reserva de emergência passo a passo
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              Planilha de acompanhamento de dívidas
+            </li>
+          </ul>
+          <div class="offer-bonus">
+            <strong>🎁 Bônus exclusivos</strong>
+            <p>Mini-guia "Investimentos para Iniciantes" + template de planejamento mensal editável + planilha de metas financeiras.</p>
+          </div>
+          <div class="price-box">
+            <p class="price-original">De R$ 97,00</p>
+            <p class="price-current">R$ 35,00 <span>pagamento único</span></p>
+          </div>
+          <a href="https://pay.kiwify.com.br/ydyTkZz" class="btn btn-primary btn-large">Garantir meu E-book Agora</a>
+          <p class="secure-note">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Checkout seguro pela Kiwify
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="heading">O que dizem quem já comprou</h2>
+        <p>Resultados reais de pessoas que transformaram sua relação com dinheiro e organização.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Consegui organizar minhas contas em uma semana. A planilha e o passo a passo de quitar dívidas mudaram minha vida."</p>
+          <div class="testimonial-author">
+            <div class="avatar" style="background: linear-gradient(135deg, #0d3b2e, #1a5c4a);">AM</div>
+            <div class="author-info">
+              <strong>Ana Mendes</strong>
+              <span>Professora, São Paulo</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Finalmente entendi como começar a investir sem medo. O conteúdo é direto, sem enrolação. Vale cada centavo dos R$ 35."</p>
+          <div class="testimonial-author">
+            <div class="avatar" style="background: linear-gradient(135deg, #0f172a, #1e3a5f);">RL</div>
+            <div class="author-info">
+              <strong>Ricardo Lima</strong>
+              <span>Empreendedor, Belo Horizonte</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"A parte de rotinas de organização me ajudou a manter a casa e as finanças em ordem. Recomendo demais!"</p>
+          <div class="testimonial-author">
+            <div class="avatar" style="background: linear-gradient(135deg, #b8943f, #c9a84c);">FS</div>
+            <div class="author-info">
+              <strong>Fernanda Souza</strong>
+              <span>Mãe e freelancer, Curitiba</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Paguei o e-book na sexta e no domingo já tinha feito meu primeiro orçamento. Simples, prático e muito eficiente."</p>
+          <div class="testimonial-author">
+            <div class="avatar" style="background: linear-gradient(135deg, #1a4a6e, #2d8a9e);">JO</div>
+            <div class="author-info">
+              <strong>João Oliveira</strong>
+              <span>Analista, Rio de Janeiro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section guarantee">
+    <div class="container">
+      <div class="guarantee-icon">
+        <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <h2 class="heading">Garantia incondicional de 7 dias</h2>
+      <p>Se você não gostar do conteúdo, devolvo 100% do seu dinheiro. Sem burocracia, sem perguntas. Você não tem nada a perder — e muito a ganhar.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2 class="heading">Perguntas Frequentes</h2>
+        <p>Tire suas dúvidas antes de garantir seu acesso.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item active">
+          <button class="faq-question" aria-expanded="true">
+            Como recebo o e-book após a compra?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Assim que o pagamento for confirmado, você recebe o acesso por e-mail com o link para download do e-book e dos bônus. É rápido e automático.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Quais as formas de pagamento?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>O pagamento é processado com segurança pela Kiwify. Você pode pagar com cartão de crédito, débito, Pix e boleto bancário.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Em qual formato vem o arquivo?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>O e-book e os bônus são entregues em PDF, acessíveis em qualquer celular, tablet, computador ou e-reader. As planilhas vêm em formato Excel/Google Sheets editável.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Preciso ter conhecimento financeiro para acompanhar?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Não. O conteúdo foi criado para iniciantes, com linguagem simples, exemplos do dia a dia e passo a passo fácil de aplicar.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Posso compartilhar o material com outras pessoas?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Não. A compra é licenciada para uso individual. O compartilhamento ou revenda não é autorizado e pode acarretar a suspensão do acesso.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            E se eu não gostar do e-book?
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Você tem 7 dias de garantia incondicional. Se não gostar, basta solicitar o reembolso e devolvemos 100% do valor pago.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section final-cta">
+    <div class="container">
+      <h2 class="heading">Pronto para transformar suas finanças?</h2>
+      <p>Clique no botão abaixo e garanta agora o combo completo por apenas <strong>R$ 35,00</strong>. Acesso imediato, planilhas prontas e garantia de 7 dias.</p>
+      <a href="https://pay.kiwify.com.br/ydyTkZz" class="btn btn-primary btn-large">Quero meu E-book Agora</a>
+    </div>
+  </section>
+
+  <div class="sticky-cta">
+    <a href="https://pay.kiwify.com.br/ydyTkZz" class="btn btn-primary">Comprar por R$ 35,00</a>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="heading">E-book Finanças & Organização</h3>
+          <p>Educação financeira e organização pessoal de forma simples, prática e acessível.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">Início</a></li>
+            <li><a href="https://pay.kiwify.com.br/ydyTkZz">Comprar</a></li>
+            <li><a href="#" onclick="document.querySelector('.faq-list').scrollIntoView({behavior:'smooth'});return false;">Dúvidas</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Política de Reembolso</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Suporte</h4>
+          <ul>
+            <li><a href="mailto:suporte@seudominio.com">suporte@seudominio.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026. Todos os direitos reservados. Este site não é afiliado ao Kiwify.</p>
+        <p style="margin-top:8px; font-size:0.75rem; color:rgba(255,255,255,0.35);">As informações financeiras são para fins educacionais. Consulte um profissional especializado antes de tomar decisões financeiras. O e-book é um produto digital. O resultado pode variar de pessoa para pessoa conforme aplicação do conteúdo.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(button => {
+      button.addEventListener('click', () => {
+        const item = button.parentElement;
+        const isActive = item.classList.contains('active');
+
+        document.querySelectorAll('.faq-item').forEach(faq => {
+          faq.classList.remove('active');
+          faq.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+
+        if (!isActive) {
+          item.classList.add('active');
+          button.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+
+    const sticky = document.querySelector('.sticky-cta');
+    window.addEventListener('scroll', () => {
+      if (!sticky) return;
+      const footer = document.querySelector('.footer');
+      const footerTop = footer.getBoundingClientRect().top;
+      sticky.style.display = footerTop < window.innerHeight ? 'none' : 'block';
+    }, { passive: true });
+  </script>
+</body>
+</html>
